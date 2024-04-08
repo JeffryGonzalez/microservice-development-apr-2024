@@ -1,7 +1,7 @@
 {
   "type": "excalidraw",
   "version": 2,
-  "source": "https://app.excalidraw.com",
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
   "elements": [
     {
       "type": "rectangle",
@@ -34,8 +34,8 @@
     },
     {
       "type": "text",
-      "version": 122,
-      "versionNonce": 1956973482,
+      "version": 123,
+      "versionNonce": 1643032755,
       "isDeleted": false,
       "id": "a6YheCzvt1QiUIpWsRbZ_",
       "fillStyle": "solid",
@@ -55,7 +55,7 @@
       "frameId": "ZJZLXBvM3TBn65Gbyxi5v",
       "roundness": null,
       "boundElements": [],
-      "updated": 1696939366234,
+      "updated": 1712597994529,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -65,7 +65,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "An App - In Process Early Bound",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -138,7 +139,8 @@
       "verticalAlign": "middle",
       "containerId": "EtkJPYkejT6wkXM6MBsLc",
       "originalText": "A",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 20
     },
     {
       "type": "rectangle",
@@ -211,7 +213,8 @@
       "verticalAlign": "middle",
       "containerId": "_ZCte2IZIP7zMRVsl5y4c",
       "originalText": "B",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 20
     },
     {
       "type": "arrow",
@@ -267,8 +270,8 @@
     },
     {
       "type": "text",
-      "version": 184,
-      "versionNonce": 1556241398,
+      "version": 185,
+      "versionNonce": 2115512317,
       "isDeleted": false,
       "id": "128q0AG9rj5tqgfIm0C9H",
       "fillStyle": "solid",
@@ -288,7 +291,7 @@
       "frameId": "ZJZLXBvM3TBn65Gbyxi5v",
       "roundness": null,
       "boundElements": [],
-      "updated": 1696939366234,
+      "updated": 1712597994532,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -298,7 +301,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Method A calls Method B\n\nIf B changes its signature (contract)\nA must be updated, and the app must\nbe redeployed.",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 115
     },
     {
       "type": "rectangle",
@@ -367,12 +371,13 @@
       "verticalAlign": "middle",
       "containerId": "YhbtLK65H-AvQeL4fEX7m",
       "originalText": "Ambient Deps",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 63,
-      "versionNonce": 203032170,
+      "version": 64,
+      "versionNonce": 752624211,
       "isDeleted": false,
       "id": "AZSIo3ga3T692KyZFJ_vR",
       "fillStyle": "solid",
@@ -392,7 +397,7 @@
       "frameId": "ZJZLXBvM3TBn65Gbyxi5v",
       "roundness": null,
       "boundElements": [],
-      "updated": 1696939366234,
+      "updated": 1712597994533,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -402,7 +407,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Runtime, OS, Frameworks, Etc. Lower Layer of Container",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -471,12 +477,13 @@
       "verticalAlign": "middle",
       "containerId": "-mV1hIsPsIGA9dyWbKQpy",
       "originalText": "Packages",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 20
     },
     {
       "type": "text",
-      "version": 42,
-      "versionNonce": 1597992246,
+      "version": 43,
+      "versionNonce": 942415965,
       "isDeleted": false,
       "id": "5VREOZDaPfc9YwNALoSBQ",
       "fillStyle": "solid",
@@ -496,7 +503,7 @@
       "frameId": "ZJZLXBvM3TBn65Gbyxi5v",
       "roundness": null,
       "boundElements": [],
-      "updated": 1696939366235,
+      "updated": 1712597994534,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -506,12 +513,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Nuget Packages",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 130,
-      "versionNonce": 1218554154,
+      "version": 131,
+      "versionNonce": 1214930931,
       "isDeleted": false,
       "id": "pndEFw4IXqiZ-65N0dVZN",
       "fillStyle": "solid",
@@ -531,7 +539,7 @@
       "frameId": "ZJZLXBvM3TBn65Gbyxi5v",
       "roundness": null,
       "boundElements": [],
-      "updated": 1696939366235,
+      "updated": 1712597994535,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -541,12 +549,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Changes in any layer require a new deployment of all layers above it.",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 328,
-      "versionNonce": 1250449014,
+      "version": 329,
+      "versionNonce": 300027069,
       "isDeleted": false,
       "id": "zflZwamQd0fC3utdQ7BgO",
       "fillStyle": "solid",
@@ -566,7 +575,7 @@
       "frameId": "ZJZLXBvM3TBn65Gbyxi5v",
       "roundness": null,
       "boundElements": [],
-      "updated": 1696939366236,
+      "updated": 1712597994541,
       "link": null,
       "locked": false,
       "fontSize": 16,
@@ -576,7 +585,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Note: We are assuming a strictly typed\nlanguage here, like C#.\n\nDynamically typed languages like JavaScript\nmust be augmented with tests and/or \ntype checkers (like TypeScript) to ensure\nchanges in Method B trigger an update in\nMethod A.",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 149
     },
     {
       "type": "frame",
@@ -706,7 +716,8 @@
       "verticalAlign": "middle",
       "containerId": "itQ9mWY4Njs7Wj2LuyLXC",
       "originalText": "A",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 20
     },
     {
       "type": "rectangle",
@@ -783,7 +794,8 @@
       "verticalAlign": "middle",
       "containerId": "raGtV_tcgtvL4338j21vj",
       "originalText": "B",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 20
     },
     {
       "type": "arrow",
@@ -887,8 +899,8 @@
     },
     {
       "type": "text",
-      "version": 70,
-      "versionNonce": 1101460458,
+      "version": 71,
+      "versionNonce": 2124409235,
       "isDeleted": false,
       "id": "wiiNsOZm0Dxt8odbNMoHL",
       "fillStyle": "solid",
@@ -908,7 +920,7 @@
       "frameId": "whj2xHIItsv-oW9uANq1Z",
       "roundness": null,
       "boundElements": [],
-      "updated": 1696939366236,
+      "updated": 1712597994541,
       "link": null,
       "locked": false,
       "fontSize": 16,
@@ -918,12 +930,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "async",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 15
     },
     {
       "type": "text",
-      "version": 106,
-      "versionNonce": 1197610934,
+      "version": 107,
+      "versionNonce": 719023389,
       "isDeleted": false,
       "id": "CxfMoH_ZwdmoQywnzc_NL",
       "fillStyle": "solid",
@@ -943,7 +956,7 @@
       "frameId": "whj2xHIItsv-oW9uANq1Z",
       "roundness": null,
       "boundElements": [],
-      "updated": 1696939366236,
+      "updated": 1712597994544,
       "link": null,
       "locked": false,
       "fontSize": 203.73333333333332,
@@ -953,12 +966,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "?",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 196
     },
     {
       "type": "text",
-      "version": 208,
-      "versionNonce": 1765074602,
+      "version": 209,
+      "versionNonce": 347291443,
       "isDeleted": false,
       "id": "OHGVjY9X8W_mCQ7idJL2V",
       "fillStyle": "solid",
@@ -978,7 +992,7 @@
       "frameId": "whj2xHIItsv-oW9uANq1Z",
       "roundness": null,
       "boundElements": [],
-      "updated": 1696939366236,
+      "updated": 1712597994544,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -988,12 +1002,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Across Process - Late Bound",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 296,
-      "versionNonce": 502378742,
+      "version": 297,
+      "versionNonce": 847888765,
       "isDeleted": false,
       "id": "vy2BsU2NIgEJ08HpBWd7Y",
       "fillStyle": "solid",
@@ -1013,7 +1028,7 @@
       "frameId": "whj2xHIItsv-oW9uANq1Z",
       "roundness": null,
       "boundElements": [],
-      "updated": 1696939366237,
+      "updated": 1712597994546,
       "link": null,
       "locked": false,
       "fontSize": 16,
@@ -1023,7 +1038,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "This gets scarier. \nWhile tests are helpful (and mandatory)\nYou can only test at a certain point in time.\nIf that external dependency changes after the tests run,\nyour code will either fail, or will need to be written\nin such a way that it can be resilient.",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 111
     },
     {
       "type": "frame",
@@ -1055,8 +1071,8 @@
     },
     {
       "type": "text",
-      "version": 790,
-      "versionNonce": 938901866,
+      "version": 791,
+      "versionNonce": 1695211731,
       "isDeleted": false,
       "id": "MqB2Eco9Jkjy73FDWgNAg",
       "fillStyle": "solid",
@@ -1076,7 +1092,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696939366237,
+      "updated": 1712597994549,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1086,12 +1102,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Why Do We Make Late-Bound Calls?\n\n1. An Expedient. We don't want to reinvent the wheel. (like building a relational database engine)\n2. We need \"state\" (state: The value of data at a point in time)\n    - e.g. What is the current (NOW) balance of my account?\n           What was the balance of my account on 1/15/2023 (THEN)?\n3. We need a process to happen on some state and the rate of the change of that state process is different than our own application.\n    - If the state-process can be owned by our application, we should own that state.\n    - e.g.\n        \"Process THIS invoice\"\n        \"Hire THIS employee\"\n",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 283
     },
     {
       "type": "text",
-      "version": 700,
-      "versionNonce": 1237066294,
+      "version": 701,
+      "versionNonce": 1848543709,
       "isDeleted": false,
       "id": "pdnBYRxThRlxVSGbWLvuA",
       "fillStyle": "solid",
@@ -1111,7 +1128,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696939366238,
+      "updated": 1712597994551,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1121,7 +1138,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "What do we need to make late-bound calls?\n\n1. Location. Where is it? What IP address? What protocol? \n2. What does it need from us to do the work?\n3. How should I interpret the response? \n\n\nYou are saying \"In order for me to do my job, I need a service at this location, that accepts a request in this form, \nand sends me back something precisely like this\".\n\n\n    ",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 283
     }
   ],
   "appState": {
