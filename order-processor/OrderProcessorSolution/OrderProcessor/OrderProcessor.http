@@ -21,7 +21,7 @@ Content-Type: application/json
 {
   "amount": 123.45,
   "creditCardNumber": "4012888888881899",
-  "expirationDate": "04/24",
+  "expirationDate": "03/24",
   "cvv2": "123",
   "zipCode": "44107"
 }

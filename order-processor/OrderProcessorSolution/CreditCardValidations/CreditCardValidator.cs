@@ -36,9 +36,9 @@ public class CreditCardValidator
     }
 }
 
-public class CardValidationRequestValidator : AbstractValidator<CardValidationRequest>
+internal class CardValidationRequestValidator : AbstractValidator<CardValidationRequest>
 {
-    public CardValidationRequestValidator()
+    internal CardValidationRequestValidator()
     {
 
         RuleFor(o => o.CreditCardNumber).NotNull().NotEmpty().CreditCard();
