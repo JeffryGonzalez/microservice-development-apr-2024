@@ -1,3 +1,4 @@
+using CreditCardValidations;
 using Microsoft.AspNetCore.Mvc;
 
 using OrderProcessor.Models;
@@ -12,6 +13,7 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddScoped<CreditCardProcessor>();
+builder.Services.AddSingleton<CreditCardValidator>(); // TODO: Discuss
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,37 +23,32 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapPost("/orders", async ([FromBody] OrderProcessingRequest request, [FromServices] CreditCardProcessor processor) =>
+app.MapPost("/orders", async ([FromBody] OrderProcessingRequest request, [FromServices] CreditCardValidator validator, [FromServices] CreditCardProcessor processor) =>
 {
-    var validator = new OrderProcessingRequestValidator();
-    var results = validator.Validate(request);
-    if(!results.IsValid)
+
+
+    try
     {
-        
-        return Results.ValidationProblem(results.ToDictionary());
+        var validationReponse = validator.ValidateCard(OrderProcessingRequest.ToValidationRequest(request));
+
+        var (approvalCode, when) = await processor.ProcessCardAsync(request.CreditCardNumber, request.Cvv2, request.ZipCode, request.Amount);
+
+        var response = new OrderProcessingResponse
+        {
+            Amount = request.Amount,
+            ApprovalCode = approvalCode.ToString(),
+            CreditCardCompany = validationReponse.CreditCardCompany,
+            CreditCardNumber = new String('*', request.CreditCardNumber.Length - 4) + request.CreditCardNumber.Substring(request.CreditCardNumber.Length - 4),
+            TransactionDate = when
+        };
+        return Results.Ok(response);
     }
-    var cardType = request.CreditCardNumber switch
+    catch (BadCreditCardNumberException ex)
     {
-        var c when c.StartsWith("37") => "American Express",
-        var c when c.StartsWith("3") => "Diner's Club",
-        var c when c.StartsWith("4") => "Visa",
-        var c when c.StartsWith("5") => "Mastercard",
-        var c  when c.StartsWith("6") => "Discover",
-        _ => "Uknown Card Type"
-    };
 
+        return Results.ValidationProblem(ex.Errors!);
+    }
 
-    var (approvalCode, when) = await processor.ProcessCardAsync(request.CreditCardNumber, request.Cvv2, request.ZipCode, request.Amount);
-
-    var response = new OrderProcessingResponse
-    {
-        Amount = request.Amount,
-        ApprovalCode = approvalCode.ToString(),
-        CreditCardCompany = cardType,
-        CreditCardNumber = new String('*', request.CreditCardNumber.Length - 4) + request.CreditCardNumber.Substring(request.CreditCardNumber.Length - 4),
-        TransactionDate = when
-    };
-    return Results.Ok(response);
 });
 app.Run();
 
