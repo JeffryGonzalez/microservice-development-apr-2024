@@ -3,7 +3,7 @@
 namespace CreditCardValidations;
 public class CreditCardValidator
 {
-    public ValidationResponse ValidateCard(CardValidationRequest cardInfo)
+    public ValidationResponse ValidateCard(CardValidationRequest cardInfo, bool forRealz)
     {
         var validator = new CardValidationRequestValidator();
         var validations = validator.Validate(cardInfo);
