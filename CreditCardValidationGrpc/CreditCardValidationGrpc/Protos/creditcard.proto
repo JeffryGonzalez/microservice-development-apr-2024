@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "CreditCardValidationGrpc.Protos";
+
+package cards;
+
+
+message CardValidationRequest {
+    string creditCarNumber = 1;
+    string cvv2 = 2;
+    string expirationDate = 3;
+    string zipCode = 4;
+}
+
+
+message CardValidationResponse {
+    string creditCardNumber = 1;
+    string creditCardCompany = 2;
+    
+}
+
+
+service CardValidator {
+    rpc ValidateCard (CardValidationRequest) returns (CardValidationResponse);
+}
