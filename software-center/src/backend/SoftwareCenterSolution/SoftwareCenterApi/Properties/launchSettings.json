@@ -3,7 +3,7 @@
     "http": {
       "commandName": "Project",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Prod"
       },
       "dotnetRunMessages": true,
       "applicationUrl": "http://localhost:1337"

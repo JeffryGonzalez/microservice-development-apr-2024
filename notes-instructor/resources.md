@@ -77,3 +77,7 @@ Let me know your favorites. I'll check them out and add them to the list!
 [The Kubernetes Book](https://www.amazon.com/Kubernetes-Book-Version-November-2018-ebook/dp/B072TS9ZQZ/ref=sr_1_1?crid=WQQSAWRPF9JS&keywords=the+kubernetes+book&qid=1652382906&sprefix=the+kubernetes+book%2Caps%2C60&sr=8-1)
 
 [Event Driven Microservices](https://www.amazon.com/Building-Event-Driven-Microservices-Leveraging-Organizational/dp/1492057894/ref=sr_1_1?keywords=event+driven+microservices&qid=1652382937&sprefix=event+driven+%2Caps%2C52&sr=8-1)
+
+## Oksar's Blog on Event Driven 
+https://event-driven.io/en/
+
