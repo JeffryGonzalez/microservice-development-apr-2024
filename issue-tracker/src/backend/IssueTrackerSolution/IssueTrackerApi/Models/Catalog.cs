@@ -18,11 +18,11 @@ public class CatalogResponseItemModel
 [Mapper]
 public static partial class CatalogItemMapper
 {
-   public static partial IQueryable<CatalogResponseItemModel> ProjectToModel(this IQueryable<CatalogItem> q);
+    public static partial IQueryable<CatalogResponseItemModel> ProjectToModel(this IQueryable<CatalogItem> q);
 }
 
 public class CatalogResponseModel
 {
-    public IList<CatalogResponseItemModel>? Catalog { get; set; } 
+    public IList<CatalogResponseItemModel>? Catalog { get; set; }
 }
 
