@@ -3,10 +3,11 @@ using IssueTrackerApi.Models;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Wolverine;
 
 namespace IssueTrackerApi.Controllers;
 
-public class CatalogController(IssuesDataContext context) : ControllerBase
+public class CatalogController(IssuesDataContext context, IMessageBus bus) : ControllerBase
 {
     [HttpGet("/catalog")]
     public async Task<ActionResult<CatalogResponseModel>> GetSupportedSoftware()
@@ -45,10 +46,9 @@ public class CatalogController(IssuesDataContext context) : ControllerBase
         context.Issues.Add(issue);
         await context.SaveChangesAsync();
 
+        // publish a message to the topic.
+        await bus.InvokeAsync(new PublishIssueCommand(issue.Id));
 
-        // If we do, write the issue to our database.
-        // send them back a response
-        // send a message to a topic so some other process can handle it.
         var response = new IssueResponseModel
         {
             CreatedAt = issue.CreatedAt,
@@ -64,3 +64,4 @@ public class CatalogController(IssuesDataContext context) : ControllerBase
 
 
 }
+public record PublishIssueCommand(Guid issueId);

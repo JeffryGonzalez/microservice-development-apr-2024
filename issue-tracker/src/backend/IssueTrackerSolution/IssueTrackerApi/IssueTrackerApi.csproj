@@ -30,6 +30,9 @@
     <Protobuf Include="Protos\catalog-item-retired.proto" GrpcServices="None">
       <SourceUri>https://raw.githubusercontent.com/JeffryGonzalez/microservice-development-apr-2024/master/schema/software-center/catalog-item-retired.proto</SourceUri>
     </Protobuf>
+    <Protobuf Include="Protos\issue-item-created.proto" GrpcServices="None">
+      <SourceUri>https://raw.githubusercontent.com/JeffryGonzalez/microservice-development-apr-2024/master/schema/help-desk/issue-item-created.proto</SourceUri>
+    </Protobuf>
   </ItemGroup>
 
 </Project>
