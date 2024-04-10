@@ -10,17 +10,35 @@ public class CatalogHandler(IssuesDataContext context, ILogger<CatalogHandler> l
 
     public async Task Handle(SoftwareCatalogItemCreated message)
     {
-        logger.LogInformation("Got a new piece of software {0}", message.Name);
+        // TODO: Upsert?
+        logger.LogInformation("Got a new piece of software {0}", message.Name); // TODO: This was probably dumb.
         // convert this to a catalog item and save it in our database.
-        var newItem = new CatalogItem
-        {
-            Id = Guid.Parse(message.Id),
-            Description = message.Description,
-            Retired = false,
-            Title = message.Name
-        };
+        // if that thing doesn't exist, add it, otherwise update it
 
-        context.Catalog.Add(newItem);
+        var storedItem = await context
+            .ActiveCatalogItems
+            .SingleOrDefaultAsync(i =>
+            i.Id == Guid.Parse(message.Id));
+        if (storedItem is null)
+        {
+            var newItem = new CatalogItem
+            {
+                Id = Guid.Parse(message.Id),
+                Description = message.Description,
+                Retired = false,
+                Title = message.Name
+            };
+
+            context.Catalog.Add(newItem);
+        }
+        else
+        {
+            storedItem.Title = message.Name;
+            storedItem.Description = message.Description;
+
+        }
+
+
         await context.SaveChangesAsync();
     }
 

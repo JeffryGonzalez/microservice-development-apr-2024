@@ -33,12 +33,15 @@ builder.Host.UseWolverine(opts =>
     opts.Policies.UseDurableOutboxOnAllSendingEndpoints();
     opts.UseKafka(kafkaConnectionString).ConfigureConsumers(c =>
     {
-        c.AutoOffsetReset = Confluent.Kafka.AutoOffsetReset.Earliest;
+        c.AutoOffsetReset = Confluent.Kafka.AutoOffsetReset.Earliest; // Earliest here means the earliest this consumer group hasn't already processed.
+        // in Kafka, consumer groups are managed by the broker - it *knows*. 
+
     });
 
     opts.ListenToKafkaTopic("softwarecenter.catalog-item-created")
         .ProcessInline()
         .WithGroupId("issue-tracker-api"); // This is the consumer group.
+                                           // Wolverine, because it works with other brokers aside from kafka *also* keeps track of the offset.
 
     opts.ListenToKafkaTopic("softwarecenter.catalog-item-retired")
         .ProcessInline()

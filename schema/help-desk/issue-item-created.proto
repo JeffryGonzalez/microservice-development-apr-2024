@@ -1,0 +1,12 @@
+syntax = "proto";
+
+import "google/protobuf/timestamp.proto";
+option csharp_namespace = "IssueTrackerApi.Outgoing";
+
+message IssueCreated {
+    string id = 1;
+    string softwareId = 2;
+    string description = 3;
+
+    google.protobuf.Timestamp created_at = 4;
+}
