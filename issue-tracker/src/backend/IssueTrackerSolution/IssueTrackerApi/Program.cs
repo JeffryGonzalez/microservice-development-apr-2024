@@ -1,5 +1,5 @@
 using IssueTrackerApi.Data;
-
+using IssueTrackerApi.Outgoing;
 using Microsoft.EntityFrameworkCore;
 using Oakton.Resources;
 using Wolverine;
@@ -47,6 +47,7 @@ builder.Host.UseWolverine(opts =>
         .ProcessInline()
         .WithGroupId("issue-tracker-api");
 
+    opts.PublishMessage<IssueCreated>().ToKafkaTopic("help-desk.issue-created");
     opts.Services.AddResourceSetupOnStartup(); // sort of like the entity framework stuff to create the tables wolverine needs
 });
 

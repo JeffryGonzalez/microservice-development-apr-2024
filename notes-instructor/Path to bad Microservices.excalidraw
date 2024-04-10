@@ -1,7 +1,7 @@
 {
   "type": "excalidraw",
   "version": 2,
-  "source": "https://app.excalidraw.com",
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
   "elements": [
     {
       "type": "text",
@@ -36,7 +36,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Data on the Inside vs. Data on the Outside\n",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 74
     },
     {
       "type": "frame",
@@ -99,7 +100,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "d",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "text",
@@ -134,7 +136,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "jjkljslkdjf",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "ellipse",
@@ -348,7 +351,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "begin transaction\n    update customers...\n    insert into orders ...\n    update inventory ...\nend transaction",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 154
     },
     {
       "type": "text",
@@ -383,7 +387,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Transaction Script",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 33
     },
     {
       "type": "rectangle",
@@ -452,7 +457,8 @@
       "verticalAlign": "middle",
       "containerId": "235UnzMkRiHhgmnKekPqg",
       "originalText": "Customers",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -521,7 +527,8 @@
       "verticalAlign": "middle",
       "containerId": "JABxCyp4pSweDE8s9I_nH",
       "originalText": "Orders",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -590,7 +597,8 @@
       "verticalAlign": "middle",
       "containerId": "yhs8YFHjNbSeFmKyfkCi1",
       "originalText": "Inventory",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -682,7 +690,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "d",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "text",
@@ -717,7 +726,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "jjkljslkdjf",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "ellipse",
@@ -931,7 +941,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "begin transaction\n    update customers...\n    insert into orders ...\n    update inventory ...\nend transaction",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 154
     },
     {
       "type": "text",
@@ -966,7 +977,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Transaction Script",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 33
     },
     {
       "type": "rectangle",
@@ -1035,7 +1047,8 @@
       "verticalAlign": "middle",
       "containerId": "BdBL1Vn4EdqpNYzhnp2u4",
       "originalText": "Customers",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -1104,7 +1117,8 @@
       "verticalAlign": "middle",
       "containerId": "OEFkvxsAMWDbgbN7UEkwe",
       "originalText": "Orders",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -1173,7 +1187,8 @@
       "verticalAlign": "middle",
       "containerId": "OtsLPCS4dA3jbv7WbZtVe",
       "originalText": "Inventory",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -1320,7 +1335,8 @@
       "verticalAlign": "middle",
       "containerId": "leh5SEK_WQIrGfpfmCUNj",
       "originalText": "Web Server",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "arrow",
@@ -1459,7 +1475,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Select ...",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "text",
@@ -1494,7 +1511,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Copy of data",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -1571,7 +1589,8 @@
       "verticalAlign": "middle",
       "containerId": "hijenbyFIbq9nuAF_QLio",
       "originalText": "Browser",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "arrow",
@@ -1654,7 +1673,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "GET /cart",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "arrow",
@@ -1737,7 +1757,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "200 Ok",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -1818,7 +1839,8 @@
       "verticalAlign": "middle",
       "containerId": "1u-7iv_6OYbBlDiLn-0tq",
       "originalText": "Browser",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "arrow",
@@ -1901,7 +1923,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "POST /orders",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "arrow",
@@ -1984,7 +2007,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "201 Created",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "arrow",
@@ -2071,7 +2095,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "400 Bad Request",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "arrow",
@@ -2206,7 +2231,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Time Passes - Data Gets Older",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "text",
@@ -2241,7 +2267,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "The only \"non-cached\" data is on the hard drive where the database lives.\nThe longer a cached copy lives the more likely it is out of date.\nWe use database transactions to create a new \"NOW\".\n    - Given this data that was generated THEN\n    - Can we do the work NOW?",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 154
     },
     {
       "type": "frame",
@@ -2517,7 +2544,8 @@
       "verticalAlign": "middle",
       "containerId": "ekpc23pofHkV_zn0R_kJ5",
       "originalText": "Customers",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "ellipse",
@@ -2765,7 +2793,8 @@
       "verticalAlign": "middle",
       "containerId": "XW6HNPCCPn7Sm1vwtEXef",
       "originalText": "Orders",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "ellipse",
@@ -3013,7 +3042,8 @@
       "verticalAlign": "middle",
       "containerId": "2o3v5oX9EonPB51fRnZIw",
       "originalText": "Inventory",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -3164,7 +3194,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "begin transaction\n    update customers...\n    insert into orders ...\n    update inventory ...\nend transaction",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 154
     },
     {
       "type": "text",
@@ -3199,7 +3230,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "What if orders insert fails? \nWhat if inventory update fails?\n\nWhat if the customer exceeds credit limit on another order\nbefore this order completes?\n",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 133
     },
     {
       "type": "text",
@@ -3234,7 +3266,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "We aren't even talking about services yet - just databases.",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "text",
@@ -3269,7 +3302,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "*Distributed Transactions - \"Tell each one to prepare the work but don't do it yet. If each of them says they can do it,\nthen tell them all to commit the work\" - Two-Phase Commit. This failed. Doesn't work.",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 41
     },
     {
       "type": "frame",
@@ -3332,7 +3366,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "\"Microservices Don't Share Databases\"",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "ellipse",
@@ -3580,7 +3615,8 @@
       "verticalAlign": "middle",
       "containerId": "IbO9iJ-S3qyoInYEQTV_O",
       "originalText": "Customers",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "ellipse",
@@ -3828,7 +3864,8 @@
       "verticalAlign": "middle",
       "containerId": "9agpMoiaFP1r4Hw_brjub",
       "originalText": "Orders",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "ellipse",
@@ -4076,7 +4113,8 @@
       "verticalAlign": "middle",
       "containerId": "tctwZxpMwsXahvTEQEVcT",
       "originalText": "Inventory",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -4232,7 +4270,8 @@
       "verticalAlign": "middle",
       "containerId": "pkdsij7XjPP4P092MSy4V",
       "originalText": "Customers API",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "rectangle",
@@ -4301,7 +4340,8 @@
       "verticalAlign": "middle",
       "containerId": "E8SVp47pA_d3Z8SboYPZp",
       "originalText": "Orders API",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "rectangle",
@@ -4370,7 +4410,8 @@
       "verticalAlign": "middle",
       "containerId": "ceIvsbjzHE1KfSnmfqOa-",
       "originalText": "Inventory API",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "arrow",
@@ -4583,7 +4624,8 @@
       "verticalAlign": "middle",
       "containerId": "2Udkn1D78NHyO4g1aFQ78",
       "originalText": "Frontend App",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "arrow",
@@ -4671,7 +4713,8 @@
       "verticalAlign": "middle",
       "containerId": "2mO5EUk-9gep5_alJE8m-",
       "originalText": "GET /customers/13",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 18
     },
     {
       "type": "arrow",
@@ -4759,7 +4802,8 @@
       "verticalAlign": "middle",
       "containerId": "hcIuXY5Yyg4LpDexSn0s0",
       "originalText": "GET /orders/?customer=13",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 41
     },
     {
       "type": "arrow",
@@ -4847,7 +4891,8 @@
       "verticalAlign": "middle",
       "containerId": "xDLt89QZIut_awgypf3BJ",
       "originalText": "GET /orders/?customer=13",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 41
     },
     {
       "type": "text",
@@ -4882,7 +4927,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "But how do I place an order?",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 18
     },
     {
       "type": "frame",
@@ -5158,7 +5204,8 @@
       "verticalAlign": "middle",
       "containerId": "Cl37u5Jk4z6s0ejrr3rQP",
       "originalText": "Customers",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "ellipse",
@@ -5406,7 +5453,8 @@
       "verticalAlign": "middle",
       "containerId": "AWqSclvR21RpY7L8w_Gc_",
       "originalText": "Orders",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "ellipse",
@@ -5654,7 +5702,8 @@
       "verticalAlign": "middle",
       "containerId": "ICdV6Ej5Km2vvQkYqPfG7",
       "originalText": "Inventory",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -5810,7 +5859,8 @@
       "verticalAlign": "middle",
       "containerId": "gjjQoFmbLl-NwMy9Gu1mg",
       "originalText": "Customers API",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "rectangle",
@@ -5879,7 +5929,8 @@
       "verticalAlign": "middle",
       "containerId": "8bMNM_ov0dujz6gmoIn8I",
       "originalText": "Orders API",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "rectangle",
@@ -5948,7 +5999,8 @@
       "verticalAlign": "middle",
       "containerId": "7YifTIhxMPkeiO1Ei4oMO",
       "originalText": "Inventory API",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "arrow",
@@ -6153,7 +6205,8 @@
       "verticalAlign": "middle",
       "containerId": "S-gxiS218K1xt64bplQxr",
       "originalText": "Frontend App",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "arrow",
@@ -6237,7 +6290,8 @@
       "verticalAlign": "middle",
       "containerId": "TVNsJFidj7Z6B9mTYQ4JB",
       "originalText": "GET /customers/13",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 18
     },
     {
       "type": "arrow",
@@ -6321,7 +6375,8 @@
       "verticalAlign": "middle",
       "containerId": "p6BbkAMdcYMoHajLIpI0p",
       "originalText": "GET /orders/?customer=13",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 41
     },
     {
       "type": "arrow",
@@ -6405,7 +6460,8 @@
       "verticalAlign": "middle",
       "containerId": "U2CQ78Ea9oUtIvOl8H5EE",
       "originalText": "GET /orders/?customer=13",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 41
     },
     {
       "type": "rectangle",
@@ -6482,7 +6538,8 @@
       "verticalAlign": "middle",
       "containerId": "e75QQLv-0yDBxdhEcoklw",
       "originalText": "Adapter API",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 18
     },
     {
       "type": "arrow",
@@ -6565,7 +6622,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Single GET Request!\n",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 41
     },
     {
       "type": "text",
@@ -6600,7 +6658,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "But how do I place an order!!!! (STILL??)",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 18
     },
     {
       "type": "arrow",
@@ -6691,12 +6750,13 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Make the Adapter be a distributed \ndatabase transaction coordinator!\nBACK TO SQUARE ONE",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 64
     },
     {
       "type": "text",
-      "version": 17,
-      "versionNonce": 650309294,
+      "version": 18,
+      "versionNonce": 517041055,
       "isDeleted": false,
       "id": "KDUpp6RUKkDRGY_bk3gzQ",
       "fillStyle": "solid",
@@ -6716,7 +6776,7 @@
       "frameId": "F1F3ZZDt9U_PZNEln6RD3",
       "roundness": null,
       "boundElements": [],
-      "updated": 1697476813682,
+      "updated": 1712782194256,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -6726,7 +6786,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Or \"Coordinator\"",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 19
     },
     {
       "type": "frame",
@@ -6789,7 +6850,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "jjkljslkdjf",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "ellipse",
@@ -7003,7 +7065,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "begin transaction\n    update customers...\n    insert into orders ...\n    update inventory ...\nend transaction",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 154
     },
     {
       "type": "rectangle",
@@ -7072,7 +7135,8 @@
       "verticalAlign": "middle",
       "containerId": "-eSB5wmFvVBiOKEY40TWN",
       "originalText": "Customers",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -7145,7 +7209,8 @@
       "verticalAlign": "middle",
       "containerId": "KM-2PUsPJPqoeDS1iobqz",
       "originalText": "Orders",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -7214,7 +7279,8 @@
       "verticalAlign": "middle",
       "containerId": "TPI1MJh3husUlejBHZ2W8",
       "originalText": "Inventory",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -7409,7 +7475,8 @@
       "verticalAlign": "middle",
       "containerId": "eQ94pvcFJeI4PilYVls6u",
       "originalText": "Customers API",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "rectangle",
@@ -7478,7 +7545,8 @@
       "verticalAlign": "middle",
       "containerId": "Zd9k933OQp6Cw2UBtHKCG",
       "originalText": "Orders API",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "rectangle",
@@ -7547,7 +7615,8 @@
       "verticalAlign": "middle",
       "containerId": "xrHm0e6hbL5LRrnsM79Re",
       "originalText": "Inventory API",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "arrow",
@@ -7904,7 +7973,8 @@
       "verticalAlign": "middle",
       "containerId": "yH411XpAPyvB9kSpvQSQI",
       "originalText": "Frontend App",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 25
     },
     {
       "type": "arrow",
@@ -7988,7 +8058,8 @@
       "verticalAlign": "middle",
       "containerId": "w36pnIDTj7YPfg5_4sLWa",
       "originalText": "GET /customers/13",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 18
     },
     {
       "type": "arrow",
@@ -8072,7 +8143,8 @@
       "verticalAlign": "middle",
       "containerId": "o1lIRVLm7HQWNsOd3RxkE",
       "originalText": "GET /orders/?customer=13",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 41
     },
     {
       "type": "arrow",
@@ -8156,7 +8228,8 @@
       "verticalAlign": "middle",
       "containerId": "HUFlbW1andOjRpKiQx0FS",
       "originalText": "GET /orders/?customer=13",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 41
     },
     {
       "type": "rectangle",
@@ -8229,7 +8302,8 @@
       "verticalAlign": "middle",
       "containerId": "26q5l_iNv5OWbqFBr_qPj",
       "originalText": "Adapter API",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 18
     },
     {
       "type": "arrow",
@@ -8312,7 +8386,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Single GET Request!\n",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 41
     },
     {
       "type": "arrow",
@@ -8399,7 +8474,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "For customer X place this order for these items...",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 18
     },
     {
       "type": "text",
@@ -8434,7 +8510,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Your APIs are just a facade over someone else's database.\n",
-      "lineHeight": 1.15
+      "lineHeight": 1.15,
+      "baseline": 41
     },
     {
       "type": "frame",
@@ -8466,8 +8543,8 @@
     },
     {
       "type": "text",
-      "version": 16,
-      "versionNonce": 939199406,
+      "version": 17,
+      "versionNonce": 33808849,
       "isDeleted": false,
       "id": "K-OxvrJw388e_ET6fIJjh",
       "fillStyle": "solid",
@@ -8487,7 +8564,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1697476876862,
+      "updated": 1712782194268,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -8497,7 +8574,8 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Later... Sagas!",
-      "lineHeight": 1.2
+      "lineHeight": 1.2,
+      "baseline": 19
     }
   ],
   "appState": {

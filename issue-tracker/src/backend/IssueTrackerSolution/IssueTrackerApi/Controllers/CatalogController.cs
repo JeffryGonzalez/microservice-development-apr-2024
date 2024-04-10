@@ -47,7 +47,7 @@ public class CatalogController(IssuesDataContext context, IMessageBus bus) : Con
         await context.SaveChangesAsync();
 
         // publish a message to the topic.
-        await bus.InvokeAsync(new PublishIssueCommand(issue.Id));
+        await bus.InvokeAsync(new PublishIssueCommand(issue.Id, softwareItem.Id, request.Description, issue.CreatedAt));
 
         var response = new IssueResponseModel
         {
@@ -64,4 +64,4 @@ public class CatalogController(IssuesDataContext context, IMessageBus bus) : Con
 
 
 }
-public record PublishIssueCommand(Guid issueId);
+public record PublishIssueCommand(Guid IssueId, Guid SoftwareId, string Description, DateTimeOffset CreatedAt);
