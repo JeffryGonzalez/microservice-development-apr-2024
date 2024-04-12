@@ -3,7 +3,7 @@ syntax = "proto3";
 import "google/protobuf/timestamp.proto";
 option csharp_namespace = "HelpDeskStreamAcl.Outgoing";
 
-message IssueCreated {
+message Issue {
     string id = 1;
     SoftwareItem software = 2;
     string description = 3;
