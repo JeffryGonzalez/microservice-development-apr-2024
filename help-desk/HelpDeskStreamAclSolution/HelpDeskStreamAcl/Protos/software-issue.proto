@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+option csharp_namespace = "HelpDeskStreamAcl.Outgoing";
+
+message Issue {
+    string id = 1;
+    SoftwareItem software = 2;
+    string description = 3;
+
+    google.protobuf.Timestamp created_at = 4;
+}
+
+message SoftwareItem {
+    string id = 1;
+    string title = 2;
+    string description = 3;
+}

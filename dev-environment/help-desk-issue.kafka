@@ -1,0 +1,4 @@
+CONSUMER dev-environment
+topic: helpdesk.issue
+partitions: 0
+from: 0

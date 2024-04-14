@@ -29,5 +29,8 @@
 	  <Protobuf Include="Protos\issue-item-created.proto" GrpcServices="None">
 	    <SourceUri>https://raw.githubusercontent.com/JeffryGonzalez/microservice-development-apr-2024/master/schema/help-desk/issue-item-created.proto</SourceUri>
 	  </Protobuf>
+	  <Protobuf Include="Protos\software-issue.proto" GrpcServices="None">
+	    <SourceUri>https://raw.githubusercontent.com/JeffryGonzalez/microservice-development-apr-2024/for-monday/schema/help-desk/software-issue.proto</SourceUri>
+	  </Protobuf>
 	</ItemGroup>
 </Project>

@@ -1,4 +1,6 @@
+using HelpDeskStreamAcl.Outgoing;
 using Marten;
+using Oakton.Resources;
 using Wolverine;
 using Wolverine.Kafka;
 using Wolverine.Marten;
@@ -23,12 +25,17 @@ builder.Host.UseWolverine(opts =>
     opts.UseKafka(kafkaConnectionString).ConfigureConsumers(c =>
     {
         c.AutoOffsetReset = Confluent.Kafka.AutoOffsetReset.Earliest; 
-        c.GroupId = "help-desk-tream-acl";
+        c.GroupId = "help-desk-stream-acl";
 
     });
 
     opts.ListenToKafkaTopic("softwarecenter.catalog-item-created")
         .ProcessInline();
+
+    opts.ListenToKafkaTopic("help-desk.issue-created").ProcessInline();
+
+    opts.PublishMessage<Issue>().ToKafkaTopic("helpdesk.issue");
+    opts.Services.AddResourceSetupOnStartup();
 });
 
 
