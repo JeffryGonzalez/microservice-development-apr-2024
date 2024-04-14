@@ -37,7 +37,7 @@ builder.Host.UseWolverine(opts =>
         // in Kafka, consumer groups are managed by the broker - it *knows*. 
         c.GroupId = "issue-tracker-api";
 
-    });
+    }).AutoProvision();
 
     opts.ListenToKafkaTopic("softwarecenter.catalog-item-created")
         .ProcessInline();

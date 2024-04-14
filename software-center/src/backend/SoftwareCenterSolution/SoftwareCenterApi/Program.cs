@@ -30,7 +30,7 @@ builder.Host.UseWolverine(opts =>
     opts.Policies.UseDurableOutboxOnAllSendingEndpoints();
     opts.Policies.AutoApplyTransactions();
 
-    opts.UseKafka(kafkaUrl);
+    opts.UseKafka(kafkaUrl).AutoProvision();
     opts.PublishMessage<SoftwareCatalogItemCreated>().ToKafkaTopic("softwarecenter.catalog-item-created");
     opts.PublishMessage<SoftwareCatalogItemRetired>().ToKafkaTopic("softwarecenter.catalog-item-retired");
     opts.Services.AddResourceSetupOnStartup();

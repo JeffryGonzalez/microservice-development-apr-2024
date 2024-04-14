@@ -1,4 +1,4 @@
 CONSUMER dev-environment
-topic: helpdesk.issue
+topic: help-desk.issue-created
 partitions: 0
 from: 0

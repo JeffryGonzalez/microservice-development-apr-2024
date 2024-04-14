@@ -5,7 +5,7 @@ using IssueTrackerApi.Outgoing;
 using Wolverine;
 namespace IssueTrackerApi.Handlers;
 
-public class IssuesHandler(IMessageBus bus, IssuesDataContext context)
+public class IssuesHandler(IMessageBus bus)
 {
     public async Task Handle(PublishIssueCommand command)
     {
@@ -18,7 +18,7 @@ public class IssuesHandler(IMessageBus bus, IssuesDataContext context)
             SoftwareId = command.SoftwareId.ToString()
         };
 
-        await bus.PublishAsync(@event);
+        await bus.SendAsync(@event);
     }
 }
 
