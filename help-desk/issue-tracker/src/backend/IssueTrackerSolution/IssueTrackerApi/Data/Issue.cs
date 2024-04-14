@@ -10,4 +10,6 @@ public class Issue
     public string Description { get; set; } = string.Empty;
     public DateTimeOffset CreatedAt { get; set; }
     public IssueStatus Status { get; set; }
+
+    public CatalogItem CatalogItem { get; set; } = null!;
 }

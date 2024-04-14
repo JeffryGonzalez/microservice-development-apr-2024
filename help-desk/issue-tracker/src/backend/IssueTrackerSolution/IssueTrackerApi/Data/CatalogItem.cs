@@ -9,4 +9,5 @@ public class CatalogItem
     public DateTimeOffset CreatedAt { get; set; }
 
     public bool Retired { get; set; } = false;
+    public ICollection<Issue> Issues { get; set; } = [];
 }
