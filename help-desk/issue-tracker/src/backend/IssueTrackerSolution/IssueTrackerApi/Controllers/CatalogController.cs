@@ -94,6 +94,8 @@ public class CatalogController(IssuesDataContext context, IMessageBus bus) : Con
             });
         }
     }
-
+    // TODO: Cancelling Issues
+    // Issues can only be cancelled when they are Pending
+    // 
 }
 public record PublishIssueCommand(Guid IssueId, Guid SoftwareId, string Description, DateTimeOffset CreatedAt);
