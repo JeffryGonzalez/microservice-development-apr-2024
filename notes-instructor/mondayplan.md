@@ -1,14 +1,23 @@
 # Monday
 
+Welcome back!
+
+> https://labs.azure.com/virtualmachines
+> Please start your Docker Desktop
+
+## Today
+
 - Reset everything
+- Pull down new code.
+    - Explore changes / additions
+- Event Streams / Queues / Pub Sub and Event Sourcing
+- Event-Driven Microservices
+    - Messaging (through RPCs, etc.)
+- Batch Processing vs. Stream Processing
+- Stream Processing
+- Databases / Transactions / Distributed Transactions / Data on The Inside vs. Data on the Outside
+
 - ACL and stream processing examples.
     - fix the issues with the software duplications
-- Have our software center subscribe to our issues and display them.
-    - talk about resolving them - another topic.
 
-- BIG TALK TOPIC
-    - "data on the inside vs. data on the outside"
-    - Transactions and eventual consistency
-        - e.g. WHY WE DON'T DO THIS, and what we have to do to make it happen.
 
-    
