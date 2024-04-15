@@ -105,7 +105,9 @@ employee: {
 }
 ```
 
-Remember, the owner of the employee data is the **only service that can change the data**. It can say "Nope, there is a conflict. That isn't the *same* employee".
+Remember, the owner of the employee data is the **only service that can change the data**. It can say "Nope, there is a conflict. That isn't the *same* employee". This means the service that owns the employee must be the one that "tracks" their position, in this example. It needs to be a transaction.
+1. Change their position
+2. Publish a new version of that document.
 
 
 ## Summary

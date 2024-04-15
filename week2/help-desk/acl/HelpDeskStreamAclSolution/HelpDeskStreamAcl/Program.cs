@@ -1,4 +1,4 @@
-using HelpDeskStreamAcl.Outgoing;
+
 using Marten;
 using Oakton.Resources;
 using Wolverine;
@@ -24,7 +24,7 @@ builder.Host.UseWolverine(opts =>
     opts.Policies.UseDurableOutboxOnAllSendingEndpoints();
     opts.UseKafka(kafkaConnectionString).ConfigureConsumers(c =>
     {
-        c.AutoOffsetReset = Confluent.Kafka.AutoOffsetReset.Earliest; 
+        c.AutoOffsetReset = Confluent.Kafka.AutoOffsetReset.Earliest;
         c.GroupId = "help-desk-stream-acl";
 
     });
