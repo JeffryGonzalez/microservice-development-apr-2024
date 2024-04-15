@@ -10,7 +10,7 @@ message IssueDocument {
     Software software = 4;
     User user = 5;
     google.protobuf.Timestamp created_at = 6;
-    Status status = 7;
+    Status status = 6;
 }
 
 enum Status {

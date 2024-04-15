@@ -22,4 +22,16 @@
 		<PackageReference Include="WolverineFx.RDBMS" Version="2.4.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Protobuf Include="Protos\catalog-item-created.proto" GrpcServices="None">
+	    <SourceUri>https://raw.githubusercontent.com/JeffryGonzalez/microservice-development-apr-2024/master/week2/schema/software-center/catalog-item-created.proto</SourceUri>
+	  </Protobuf>
+	  <Protobuf Include="Protos\issue-item-created.proto" GrpcServices="None">
+	    <SourceUri>https://raw.githubusercontent.com/JeffryGonzalez/microservice-development-apr-2024/master/week2/schema/help-desk/issue-item-created.proto</SourceUri>
+	  </Protobuf>
+	  <Protobuf Include="Protos\issues-acl-document.proto" GrpcServices="None">
+	    <SourceUri>https://raw.githubusercontent.com/JeffryGonzalez/microservice-development-apr-2024/master/week2/schema/help-desk/issues-acl-document.proto</SourceUri>
+	  </Protobuf>
+	</ItemGroup>
+
 </Project>

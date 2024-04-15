@@ -28,6 +28,8 @@ builder.Host.UseWolverine(opts =>
         c.GroupId = "help-desk-stream-acl";
 
     });
+
+    opts.ListenToKafkaTopic("softwarecenter.catalog-item-created").ProcessInline();
     opts.Services.AddResourceSetupOnStartup();
 });
 
