@@ -7,6 +7,7 @@ message IssueCreated {
     string id = 1;
     string softwareId = 2;
     string description = 3;
+    string userId = 5;
 
     google.protobuf.Timestamp created_at = 4;
 }
