@@ -4,7 +4,6 @@ using IssueTrackerApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Wolverine;
-using Microsoft.EntityFrameworkCore;
 
 namespace IssueTrackerApi.Controllers;
 
@@ -48,7 +47,7 @@ public class CatalogController(IssuesDataContext context, IMessageBus bus) : Con
         await context.SaveChangesAsync();
 
         // publish a message to the topic.
-        await bus.InvokeAsync(new PublishIssueCommand(issue.Id, softwareItem.Id, request.Description, issue.CreatedAt));
+        await bus.InvokeAsync(new PublishIssueCommand(issue.Id, softwareItem.Id, request.Description, issue.CreatedAt, User?.Identity?.Name ?? "Jeff"));
 
         var response = new IssueResponseModel
         {
@@ -74,7 +73,7 @@ public class CatalogController(IssuesDataContext context, IMessageBus bus) : Con
         {
             return NotFound();
         }
-        return Ok(sw.Issues.Select(i => new { Id=i.Id, Description = i.Description, Status = i.Status, Created = i.CreatedAt}));
+        return Ok(sw.Issues.Select(i => new { Id = i.Id, Description = i.Description, Status = i.Status, Created = i.CreatedAt }));
     }
 
     [HttpGet("/issues/{id:guid}")]
@@ -90,7 +89,10 @@ public class CatalogController(IssuesDataContext context, IMessageBus bus) : Con
         {
             return Ok(new
             {
-                IssueId = issue.Id, issue.Status, issue.CreatedAt, issue.CatalogItem.Title
+                IssueId = issue.Id,
+                issue.Status,
+                issue.CreatedAt,
+                issue.CatalogItem.Title
             });
         }
     }
@@ -98,4 +100,4 @@ public class CatalogController(IssuesDataContext context, IMessageBus bus) : Con
     // Issues can only be cancelled when they are Pending
     // 
 }
-public record PublishIssueCommand(Guid IssueId, Guid SoftwareId, string Description, DateTimeOffset CreatedAt);
+public record PublishIssueCommand(Guid IssueId, Guid SoftwareId, string Description, DateTimeOffset CreatedAt, string UserId);

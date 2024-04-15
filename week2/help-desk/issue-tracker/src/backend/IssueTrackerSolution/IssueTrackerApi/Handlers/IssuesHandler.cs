@@ -15,7 +15,7 @@ public class IssuesHandler(IMessageBus bus)
             Description = command.Description,
             Id = command.IssueId.ToString(),
             SoftwareId = command.SoftwareId.ToString(),
-
+            UserId = command.UserId
 
         };
 
