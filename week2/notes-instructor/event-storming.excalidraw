@@ -2293,35 +2293,6 @@
       "locked": false
     },
     {
-      "id": "ZC7vyHkDdJorFe2ZJ2P1y",
-      "type": "rectangle",
-      "x": 699.6904761904757,
-      "y": 3614.76984126984,
-      "width": 212.8571428571429,
-      "height": 101.42857142857156,
-      "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "transparent",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": {
-        "type": 3
-      },
-      "seed": 1392300037,
-      "version": 11,
-      "versionNonce": 307199429,
-      "isDeleted": false,
-      "boundElements": null,
-      "updated": 1713198707091,
-      "link": null,
-      "locked": false
-    },
-    {
       "id": "rJlTPzCsbxuzIBknEgk0t",
       "type": "text",
       "x": 963.9761904761899,
