@@ -1,9 +1,12 @@
-using System.Text.Json.Serialization;
 using IssueTrackerApi.Data;
+using IssueTrackerApi.Handlers;
 using IssueTrackerApi.Outgoing;
+using JasperFx.Core;
 using Microsoft.EntityFrameworkCore;
 using Oakton.Resources;
+using System.Text.Json.Serialization;
 using Wolverine;
+using Wolverine.ErrorHandling;
 using Wolverine.Kafka;
 using Wolverine.Postgresql;
 
@@ -15,7 +18,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers().AddJsonOptions(opts =>
 {
     opts.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
- 
+
 });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -36,6 +39,9 @@ builder.Host.UseWolverine(opts =>
     opts.Policies.UseDurableLocalQueues();
     opts.Policies.UseDurableInboxOnAllListeners();
     opts.Policies.UseDurableOutboxOnAllSendingEndpoints();
+
+    opts.OnException<RaceConditionException>().RetryWithCooldown(50.Milliseconds(), 100.Milliseconds(), 1000.Milliseconds());
+
     opts.UseKafka(kafkaConnectionString).ConfigureConsumers(c =>
     {
         c.AutoOffsetReset = Confluent.Kafka.AutoOffsetReset.Earliest; // Earliest here means the earliest this consumer group hasn't already processed.

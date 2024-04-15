@@ -51,5 +51,10 @@ public class CatalogHandler(IssuesDataContext context, ILogger<CatalogHandler> l
             item.Retired = true;
             await context.SaveChangesAsync();
         }
+        else
+        {
+            throw new RaceConditionException();
+        }
     }
 }
+public class RaceConditionException : ArgumentOutOfRangeException { }
