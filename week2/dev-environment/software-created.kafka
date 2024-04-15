@@ -1,0 +1,4 @@
+CONSUMER dev-environment
+topic: softwarecenter.catalog-item-created
+partitions: 0
+from: 0

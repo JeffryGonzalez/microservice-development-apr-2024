@@ -1,0 +1,4 @@
+CONSUMER dev-environement
+topic: softwarecenter.catalog-item-retired
+partitions: 0
+from: 0
